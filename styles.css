@@ -1,51 +1,4 @@
-ul {
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  li {
-    float: center;
-    background-color: #333; 
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 8px 8px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: red;
-  }
-
-form {
-    border: solid;
-}
-
-
-a:active {
-    background-color: red;
-  } 
-
-  ul {
-    border: 1px solid white;
-  }
-  
-  li {
-    text-align: center;
-    border-bottom: 1px solid white;
-  }
-  
-  li:last-child {
-    border-bottom: none;
-  }
-
-  button {
+ button {
       width: 8rem;
       background-color: white;
       color: black;
@@ -55,14 +8,3 @@ button:hover {
     background-color: red;
 }
 
-.header {
-    padding: 475px;
-    
-    text-align: center;
-    color: white;
-    background-image:  url(assets/Goat.jpg);
-    background-repeat: no-repeat;
-   background-size: contain;
- 
-    
-  }
