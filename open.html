@@ -32,13 +32,15 @@
             <p>By registering an account you agree to our <a href="terms.html">Terms & Privacy</a>.</p>
             </footer>
             <div style="margin-bottom: 40px;"></div>
-            <button onclick="myFunction()"><a href="open.html">Register</a></button>
+            <input type="button" onclick="clickAlert()" value="Register" style="font-family: cursive;">
 
             <script>
-            function myFunction() {
-              alert("Your registration has been successfully submitted");
-            }
-            </script>
+                function clickAlert() {
+                  alert("Your registration has been successfully submitted");
+              }
+              </script>
+              
+             
             <div style="margin-bottom: 10px;"></div>
             <nav>
                 <ul>
@@ -52,6 +54,10 @@
         </form>
     </center>    
 <style>
+body {
+    font-family: 'Teko', sans-serif;
+}
+
     ul {
     list-style-type: none;
     margin: 0;
@@ -102,6 +108,10 @@ a:active {
   li:last-child {
     border-bottom: none;
   }
+
+input:hover {
+    background-color: red;
+}
 </style>
 
 
