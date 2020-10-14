@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title>About </title>
         <link rel="stylesheet" href="styles.css" type="text/css"></a>
     </head>
 <center>   <body>
@@ -17,19 +17,23 @@
             </div>
           
         </div>
-       
-            <div class="content" style="background-color:black; padding: 30px; border: solid blue;">
-            <div style="border: solid; color:;">
-        <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: red;">Biography</h2>
-        
-    </div> 
-    </div>
-    
+        <p style="border: solid;"></p>
     </footer>
     
-
-        <div style="margin-bottom: 20px;"></div>
-        <h3 style="text-align: left; font-family: Verdana, Geneva, Tahoma, sans-serif; text-shadow: 2px 2px red;">Who Is Michael Jordan?</h3>
+        <div style="margin-bottom: 25px;"></div>
+        <div class="BIo" style="background-color: ;">
+        <h3 style="text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif;">Biography</h3>
+        <div class="li">
+    <div class="navbar">
+        <a class="active" href="#1">Who</a> 
+        <a href="#2">Early Life</a> 
+        <a href="#3">College</a> 
+        <a href="#4">Professional Career</a>
+      </div>
+      <div style="margin-bottom: 30px;"></div>
+    <hr>    
+        <div style="margin-bottom: 50px;"></div>
+        <h3 id="1" style="text-align: left; font-family: Verdana, Geneva, Tahoma, sans-serif; text-shadow: 2px 2px red;">Who Is Michael Jordan?</h3>
         <div id="who">
             <div class="who">
                      <div class="imgbx">
@@ -41,8 +45,8 @@
         <p style="text-align: left; font-family: 'Amatic SC', cursive;">Michael Jeffrey Jordan is a former professional American basketball player, Olympic athlete, businessperson and actor. Considered one of the best basketball players ever, he dominated the sport from the mid-1980s to the late 1990s. 
     Jordan led the Chicago Bulls to six National Basketball Association championships and earned the NBA's Most Valuable Player Award five times. With five regular-season MVPs and three All-Star MVPs, Jordan became the most decorated player in the NBA.
    </p>
-   <div style="margin-bottom: 60px;"></div>
-   <h3 style="text-align: left; font-family: Verdana, Geneva, Tahoma, sans-serif; text-shadow: 2px 2px red;">Early Life</h3>
+   <div style="margin-bottom: 100px;"></div>
+   <h3 id="2" style="text-align: left; font-family: Verdana, Geneva, Tahoma, sans-serif; text-shadow: 2px 2px red;">Early Life</h3>
    <div id="young">
     <div class="young">
              <div class="imgbx">
@@ -56,8 +60,8 @@
     Jordan grew up with a stable family life. His mother, Delores, was a bank teller who has since written several books. His father, James, was a maintenance worker turned manager at General Electric. Jordan had four siblings: Larry, Deloris, Roslyn and James Jr.
     Jordan's father, James, introduced him to baseball and built a basketball court in their backyard. James was murdered in the summer of 1993 when two teenagers shot him in his car in an apparent robbery as he was driving from Charlotte to Wilmington, North Carolina.
 </p>
-<div style="margin-bottom: 60px;"></div>
-<h3 style="text-align: left; font-family: Verdana, Geneva, Tahoma, sans-serif; text-shadow: 2px 2px red;"> College Career</h3>
+<div style="margin-bottom: 100px;"></div>
+<h3 id="3" style="text-align: left; font-family: Verdana, Geneva, Tahoma, sans-serif; text-shadow: 2px 2px red;"> College Career</h3>
 <div id="college">
     <div class="college">
              <div class="imgbx">
@@ -70,8 +74,8 @@
 Jordan enrolled at the University of North Carolina at Chapel Hill in 1981 and soon became an important member of the school's basketball team. UNC won the NCAA Division I championship in 1982, with Jordan scoring the final basket needed to defeat Georgetown University. He was also singled out as the NCAA College Player of the Year in 1983 and in 1984.
 Jordan left college after his junior year to join the NBA in 1984. In 1985, Jordan finished his bachelor's degree in geography as he continued to play basketball professionally. 
 </p>
-<div style="margin-bottom: 60px;"></div>
-<h3 style="text-align: left; font-family: Verdana, Geneva, Tahoma, sans-serif; text-shadow: 2px 2px red;"> Professional Basketball Career</h3>
+<div style="margin-bottom: 100px;"></div>
+<h3 id="4" style="text-align: left; font-family: Verdana, Geneva, Tahoma, sans-serif; text-shadow: 2px 2px red;"> Professional Basketball Career</h3>
 <div id="pro">
     <div class="pro">
              <div class="imgbx">
@@ -103,7 +107,7 @@ Chicago nearly matched the previous year's record with 69 wins in 1996-97, a sea
 </p>
 <div style="margin-bottom: 30px;"></div>
 <nav style="font-family: fantasy;">
-    <hr>
+    
 
 
 
@@ -172,6 +176,7 @@ li {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 4px 4px;
   }
   
   /* Change the link color to #111 (black) on hover */
@@ -192,9 +197,53 @@ li {
     border-bottom: 1px solid white;
   }
   
-  li:last-child {
-    border-bottom: none;
+ /* Add a gray right border to all list items, except the last item (last-child) */
+.li li {
+  border-right: 1px solid #bbb;
+  border-radius: 4px 4px;
+}
+
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 50%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: rgb(109, 105, 105);
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
   }
+}
+</style>
+<body>
+
+
+
+
+
+
 </style>
     </center>     </body>
 </html>
