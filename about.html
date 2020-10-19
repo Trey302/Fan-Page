@@ -3,8 +3,10 @@
     <head>
         <title>About </title>
         <link rel="stylesheet" href="styles.css" type="text/css"></a>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 <center>   <body>
+    <div id="grad1">
   <footer style="background-color: red;">
                 <div id="bull">
    <div class="box">
@@ -17,23 +19,21 @@
             </div>
           
         </div>
-        <p style="border: solid;"></p>
-    </footer>
     
-        <div style="margin-bottom: 25px;"></div>
+        <div style="margin-top: 50px;"></div>
         <div class="Bio">
-        <h3 style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;" id="who">Biography</h3>
-        <div style="margin-bottom: 50px;"></div>
+        <h3 style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;" id="who"></h3>
+        <div style="margin-bottom: 20px;"></div>
         <div class="li">
     <div class="navbar">
-        <a class="active" href="#1">Who</a> 
-        <a href="#2">Early Life</a> 
-        <a href="#3">College</a> 
-        <a href="#4">Professional Career</a>
+        <a class="active" href="#1">Biography</a> 
+        <a href="#5">Quotes</a> 
+        <a href="#">Accomplishments</a> 
+        <a href="#">Admire</a>
       </div>
-      <div style="margin-bottom: 30px;"></div>
-    <hr>    
-        <div style="margin-bottom: 50px;"></div>
+      <p style="border: solid;"></p>   
+    </footer>
+        <div style="margin-top: 50px;"></div>
         <h3 id="1" style="text-align: left; font-family: Verdana, Geneva, Tahoma, sans-serif; text-shadow: 2px 2px red;">Who Is Michael Jordan?</h3>
         <div id="who">
             <div class="who">
@@ -123,23 +123,38 @@ Chicago nearly matched the previous year's record with 69 wins in 1996-97, a sea
 <hr>
 <div style="margin-bottom: 50px;"></div>
 <div class="quotes">
-    <h2>Michael Jordan / Quotes</h2>
+    <h2 id="5">Michael Jordan / Quotes</h2>
     <div style="margin-bottom: 30px;"></div>
-    <ol style="list-style-type: circle; font-family: cursive;">
+  <ol style="list-style-type: circle; font-family: cursive;">
         <li>"One day, you might look up and see me playing the game at 50. Don't laugh. Never say never, because limits, like fears, are often just an illusion."</li>
-        <li>"Some people want it to happen, some wish it would happen, others make it happen."</li>
-        <li>"I've failed over and over and over again in my life and that is why I succeed."</li>
-        <li>"Talent wins games, but teamwork and intelligence wins championships."</li>
-        <li>"I've always believed that if you put in the work, the results will come."</li>
+        <li>"Some people want it to happen, some wish it would happen, some dream it would happen, others make it "</li>
+        <li>"I've failed over and over and over again in my life and that is why I'am successful, </li>
+        <li>Talent wins games, but teamwork and intelligence wins championships."</li>
+        <li>"I've always believed that if you put in the work, the results will come."
         <li>"Be true to the game, because the game will be true to you. If you try to shortcut the game, then the game will shortcut you. If you put forth the effort, good things will be bestowed upon you. That’s truly about the game, and in some ways that’s about life too."</li>
-    </ol>
-    <div style="margin-bottom: 13%;"></div>
+        </ol>
+    <div style="margin-bottom: 20px;"></div>
     <footer>
-        <h4 style="color: gray; text-align: center;">~ Michael Jordan</h4>
+        <h4 style="color: rgb(0, 0, 0); text-align: center;">~ Michael Jordan</h4>
     </footer>
 </div>
+<p style="border: solid;"></p>
+<h2 id="3">Work/Acommplishments</h2>
+<p>Michael Jordan accomplishments a lot in his career. Here are some of his accomplishments</p>
+<ol style="list-style-type: circle;">
+    
+    <li>Rookie of the Year</li>
+    <li> Five-time NBA MVP</li>
+    <li> Six-time NBA champion</li>
+    <li> Six-time NBA champion</li>
+    <li> Ten-time All-NBA First Team</li>
+    <li> Nine time NBA All-Defensive First Team</li>
+    <li> Defensive Player of the Year</li>
+    <li>4-time NBA All-Star</li>
+    <li>Three-time NBA All-Star MVP</li>
+    <li>Ten Scoring Titles</li>
 
-
+</ol>
 
 
 <nav style="font-family: fantasy;">
@@ -148,17 +163,19 @@ Chicago nearly matched the previous year's record with 69 wins in 1996-97, a sea
 
 
 
-    
+    <div class="bar">
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="open.html">Register</a></li>
         <li><a href="media.html">Videos</a></li>
       </ul>
     </nav>
+</div>
 
 
 </div>
-           
+
+
         
         
  
@@ -166,12 +183,21 @@ Chicago nearly matched the previous year's record with 69 wins in 1996-97, a sea
 
 
 <style>
+
+
+
+#grad1 {
+
+    background-image: linear-gradient(red, rgb(204, 112, 50));
+}
+
+
 .quotes {
     text-align: center;
     
 }
 .quotes li {
-    color: gray;
+    color: rgb(7, 7, 7);
 }
 .div {
     padding: 4px;
@@ -209,7 +235,7 @@ ul {
     list-style-type: none;
     text-align: left;
 }
-li {
+.bar li {
     float: left;
   }
   
@@ -231,14 +257,14 @@ li {
     background-color: yellow;
   } 
 
-  ul {
+  /* ul {
     border: 1px solid white;
   }
   
   li {
     text-align: center;
     border-bottom: 1px solid white;
-  }
+  } */
   
  /* Add a gray right border to all list items, except the last item (last-child) */
 .li li {
@@ -251,14 +277,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .navbar {
   width: 50%;
-  background-color: #555;
+  background-color: rgb(185, 26, 26);
   overflow: auto;
 }
 
 .navbar a {
   float: left;
   padding: 8px;
-  color: white;
+  color: rgb(14, 13, 13);
   text-decoration: none;
   font-size: 15px;
   width: 25%; /* Four links of equal widths */
@@ -266,18 +292,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 .navbar a:hover {
-  background-color: rgb(109, 105, 105);
-}
-
-
-
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
+  background-color: rgb(255, 253, 253);
 }
 </style>
 <body>
