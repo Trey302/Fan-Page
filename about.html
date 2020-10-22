@@ -123,7 +123,7 @@ Chicago nearly matched the previous year's record with 69 wins in 1996-97, a sea
 <div class="quotes">
     <h2 id="5" style="font-family: 'Amatic SC', cursive;">Michael Jordan / Quotes</h2>
     <div style="margin-bottom: 30px;"></div>
-  <ol style="list-style-type: circle; font-family: cursive;">
+  <ol style="list-style-type: none; font-family: cursive;">
         <li>"One day, you might look up and see me playing the game at 50. Don't laugh. Never say never, because limits, like fears, are often just an illusion."</li>
         <li>"Some people want it to happen, some wish it would happen, some dream it would happen, others make it "</li>
         <li>"I've failed over and over and over again in my life and that is why I'am successful, </li>
@@ -142,7 +142,7 @@ Chicago nearly matched the previous year's record with 69 wins in 1996-97, a sea
 <div style="margin-bottom: 50px;"></div>
 <h2 id="6" style="font-family: 'Amatic SC', cursive;">Work/Acommplishments</h2>
 <p style="font-family: cursive;">Michael Jordan accomplishments a lot in his career. Here are some of his accomplishments</p>
-<ol style="list-style-type: circle; font-family: cursive;">
+<ul style="list-style-type: circle; font-family: cursive; text-align: center; list-style: inside;">
     
     <li>Rookie of the Year</li>
     <li> Five-time NBA MVP</li>
@@ -154,7 +154,7 @@ Chicago nearly matched the previous year's record with 69 wins in 1996-97, a sea
     <li>4-time NBA All-Star</li>
     <li>Three-time NBA All-Star MVP</li>
     <li>Ten Scoring Titles</li>
-</ol>
+</ul>
 
 <a style="width: 12px; " href="#">Back To The Top</a>
 <div style="margin-bottom: 20px;"></div>
@@ -165,10 +165,29 @@ Chicago nearly matched the previous year's record with 69 wins in 1996-97, a sea
 <div style="margin-bottom: 25px;"></div>
 <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; display: flex;">I admire Michael Jordan because of all he has accomplished. He is a great basketball player and he inspired me to play basketball. There will never be a debate about who the greatest basketball player is of all time without it starting with Michael Jordan. Even people who never watched basketball will say Michael Jordan, because his greatness transcended his sport. Jordan’s on-court accomplishments are something to marvel at, but how used his talent to make himself practically bigger than the sport that made him, is still an awe-inspiring feature.</p>
 <div style="margin-bottom: 25px;"></div>
-<table>
-<caption style="display: flex;">In My Opinion The Greatest Of All Time(GOAT)</caption>
-<img src="assets/23.jpg" style="width: 750px; height: 500px;">
-</table>
+<div class="container">
+    <img src="assets/23.jpg" alt="goat" class="image" style="width: 100%;">
+    <div class="middle">
+      <div class="text">
+        <ul style="list-style-type: circle;">
+            <li style="list-style-type: none; font-size: 20px;">The Goat</li>
+            <div style="margin-bottom: 8px;"></div>
+            <li>Rookie Of The Year</li>
+            <div style="margin-bottom: 10px;"></div>
+            <li> 6 championships / 6 Rings</li>
+            <div style="margin-bottom: 10px;"></div>
+            <li>5 MVP(Most Valuable Player)</li>
+            <div style="margin-bottom: 10px;"></div>
+            <li>14 Time All-Star</li>
+            <div style="margin-bottom: 10px;"></div>
+            <li>1 DPOY(Defensive Player Of The  Year)</li>
+            <div style="margin-bottom: 10px;"></div>
+            <li>Ten Scoring Titles</li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
 </div>
 <div style="margin-bottom: 20px;"></div>
 <a style="width: 12px; " href="#">Back To The Top</a>
@@ -197,9 +216,50 @@ Chicago nearly matched the previous year's record with 69 wins in 1996-97, a sea
 
 <style>
 
-.collapse navbar-collapse {
-    color: white;
+
+
+.container {
+  position: relative;
+  width: 50%;
 }
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
 
 #grad1 {
 
