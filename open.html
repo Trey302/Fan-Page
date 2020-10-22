@@ -8,7 +8,7 @@
     </head>
 <center>   <body style="background-color: black">
  
-    <form action="about.html" method="post" style="background-color: white; width: 50%; height: 50%;">
+    <form action="about.html" method="GET" style="background-color: white; width: 50%; height: 50%;">
       
         <h2 style="font-family: 'Courier New', Courier, monospace;">Register</h2>
         <div style="margin-bottom: 30px;"></div>
@@ -56,8 +56,11 @@
             </footer>
             <div style="margin-bottom: 40px;"></div>
             
-            <a href="about.html" onclick="clickAlert();">
-              <input type="submit" id="username" name="username"></input> 
+         
+           
+            
+            <a onclick="clickAlert();">
+              <input type="submit" id="username" name="username" required></input> 
             </a>
             <script>
                 function clickAlert() {
