@@ -4,16 +4,21 @@
         <title>Fan Page </title>
         <link rel="stylesheet" href="styles.css" type="text/css"></a>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rock+Salt&display=swap" rel="stylesheet">
+
     </head>
     <body style="background-color: rgb(255, 34, 34);">
     <div class="header"></div>
         <div style="margin-bottom: 40px;"></div>
-    <center>    <h1 style="font-family: fantasy;">This Is a Fan Made Website For Michael Jordan</h1>
-        <a href="read.html"><button class="btn">Read More</button></a>
+    <center>    <h1 style="font-family: 'Fredericka the Great', cursive;">This Is a Fan Made Website For Michael Jordan</h1>
+        <a href="read.html"><button class="btn" data-toggle="tooltip" data-placement="bottom" title="Find out more Information">Read More</button></a>
     <div style="margin-bottom: 30px;"></div>
-        <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">If your a fan of Michael Jordan or want to find information about Michael Jordan, this is the website for you</p>
+        <h4 style="font-family: 'Cabin Sketch', cursive;">If your a fan of Michael Jordan or want to find information about Michael Jordan, this is the website for you</h4>
         <div style="margin-bottom: 20px;"></div>
-    <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Please Click The Link To Register For This Michael Jordan Fan Made Website</p>
+    <h4 style="font-family: 'Cabin Sketch', cursive;">Please Click The Link To Register For This Michael Jordan Fan Made Website</h4>
 </center>
 <div style="margin-bottom: 30px;"></div>
 <nav>
@@ -23,21 +28,26 @@
 </nav>
 <div style="margin-bottom: 20px;"></div>
 <style>
+body {
+    color: rgb(44, 43, 43);
+}
+
+
     li {
         text-align: center;
     }
 
     li {
     list-style: none;
-    font-family: ;
+  
 }
 
 li a {
     margin-top: 1rem;
     padding: 1rem 1.6rem;
-    background-color: #333;
+    background-color: rgb(44, 43, 43);
     border: none;
-    border-radius: 15px;
+    border-radius: 12px;
     color: white;
     
     cursor: pointer;
@@ -61,10 +71,10 @@ li a:hover{
 
   .btn {
     margin-top: 1rem;
-    padding: 1rem 1.6rem;
-    background-color: #333;
+    padding: 1rem .8rem;
+    background-color: rgb(44, 43, 43);
     border: none;
-    border-radius: 23px;
+    border-radius: 15px;
     color: white;
     
     cursor: pointer;
@@ -80,7 +90,11 @@ li a:hover{
     box-sizing: border-box;
 }
 </style>
-
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
 
 
 

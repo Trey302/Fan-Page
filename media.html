@@ -9,9 +9,11 @@
     
         
         <body>
+            <div class="move">
             <h1 style="text-align: center; font-family: 'Carter One', cursive;">Videos and Images of Michael Jordan</h1>
-            <div style="border: solid;"></div>
-            <div style="margin-bottom: 20px;"></div>
+        </div>
+           <div style="border: solid"></div>
+            <div style="margin-bottom: 40px;"></div>
             <table style= "width:100%">
                 <tr>
                   <th><h2>Michael Jordan's Last Championship</th></h2>
@@ -21,7 +23,7 @@
                 
               </table>
               <div style="margin-bottom: 20px;"></div>
-              <div style="border: solid;"></div>
+              
               <div style="margin-bottom: 20px;"></div>
               <table style= "width:100%">
                 <tr>
@@ -31,7 +33,7 @@
                   </video></th> 
               </table>
               <div style="margin-bottom: 20px;"></div>
-              <div style="border: solid;"></div>
+             
               <div style="margin-bottom: 20px;"></div>
               <table style= "width:100%">
                 <tr>
@@ -78,6 +80,28 @@
             body {
                 background-image: linear-gradient(red, rgb(204, 112, 50));
             }
+
+            .move {
+  background-color: red;
+ 
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; right: 0px;}
+  25%  {background-color:yellow; left:200px; right:0px;}
+  50%  {background-color:blue; left:200px; right:0px;}
+  75%  {background-color: orange; left:0px; right:0px;}
+  100% {background-color:green; left:0px; right:0px;}
+}
+            
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
             .bar li {
     display: inline-flex;
